@@ -1,0 +1,748 @@
+ /* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f8fafc;
+
+    color:#1e293b;
+
+}
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#10b981;
+    --dark:#1e293b;
+    --gray:#64748b;
+    --light:#ffffff;
+
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+}
+
+nav{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:34px;
+    color:var(--primary);
+
+}
+
+.logo h2{
+
+    color:var(--primary);
+
+}
+
+.nav-right{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.notification{
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+    cursor:pointer;
+
+}
+
+.notification i{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+}
+
+.profile{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    background:white;
+
+    padding:8px 15px;
+
+    border-radius:40px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.profile img{
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+}
+
+.profile span{
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   PAGE TITLE
+========================================== */
+
+.history-title{
+
+    width:90%;
+    margin:130px auto 40px;
+
+}
+
+.title-card{
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    text-align:center;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.title-card i{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.title-card h1{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.title-card p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   STATISTICS
+========================================== */
+
+.statistics{
+
+    width:90%;
+    margin:50px auto;
+
+}
+
+.stats-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.stat-card i{
+
+    font-size:45px;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.stat-card h2{
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:var(--gray);
+
+}
+
+/* ==========================================
+   SEARCH BAR
+========================================== */
+
+.search-section{
+
+    width:90%;
+
+    margin:50px auto;
+
+}
+
+.search-box{
+
+    background:white;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:18px 20px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.search-box i{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* ==========================================
+   FILTER BUTTONS
+========================================== */
+
+.filters{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+.filter-btn{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:white;
+
+    color:var(--dark);
+
+    cursor:pointer;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+nav{
+
+    width:95%;
+
+}
+
+.history-title,
+.statistics,
+.search-section,
+.filters{
+
+    width:95%;
+
+}
+
+.title-card{
+
+    padding:30px;
+
+}
+
+.title-card h1{
+
+    font-size:30px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.profile span{
+
+    display:none;
+
+}
+
+.title-card h1{
+
+    font-size:26px;
+
+}
+
+.stat-card{
+
+    padding:20px;
+
+}
+
+}
+
+/* ==========================================
+   RIDE HISTORY CARDS
+========================================== */
+
+.history-list{
+
+    width:90%;
+
+    margin:50px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.ride-card{
+
+    background:var(--light);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.ride-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.ride-info{
+
+    flex:1;
+
+}
+
+.ride-info h2{
+
+    margin-bottom:15px;
+
+    color:var(--dark);
+
+}
+
+.ride-info p{
+
+    margin-bottom:10px;
+
+    color:var(--gray);
+
+}
+
+.ride-info i{
+
+    color:var(--primary);
+
+    margin-right:8px;
+
+}
+
+
+/* ==========================================
+   PRICE
+========================================== */
+
+.ride-price{
+
+    text-align:center;
+
+    margin:0 40px;
+
+}
+
+.ride-price h2{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.ride-price span{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:#dcfce7;
+
+    color:#15803d;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.ride-actions{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.ride-actions button{
+
+    padding:14px 22px;
+
+    border:none;
+
+    border-radius:12px;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.invoice-btn{
+
+    background:var(--primary);
+
+}
+
+.book-btn{
+
+    background:var(--secondary);
+
+}
+
+.ride-actions button:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+.ride-actions i{
+
+    margin-right:8px;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+    margin-top:70px;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+}
+
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.ride-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.ride-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:25px;
+
+}
+
+.ride-price{
+
+    margin:0;
+
+    text-align:left;
+
+}
+
+.ride-actions{
+
+    width:100%;
+
+    flex-direction:row;
+
+}
+
+.ride-actions button{
+
+    flex:1;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.history-list{
+
+    width:95%;
+
+}
+
+.ride-actions{
+
+    flex-direction:column;
+
+}
+
+.ride-actions button{
+
+    width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.ride-card{
+
+    padding:20px;
+
+}
+
+.ride-info h2{
+
+    font-size:20px;
+
+}
+
+.ride-price h2{
+
+    font-size:24px;
+
+}
+
+}

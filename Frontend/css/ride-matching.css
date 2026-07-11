@@ -1,0 +1,937 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#10b981;
+    --light:#ffffff;
+    --dark:#1e293b;
+    --gray:#64748b;
+
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+}
+
+nav{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+}
+
+.logo h2{
+
+    color:var(--primary);
+
+}
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.notification{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+    cursor:pointer;
+
+}
+
+.notification i{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:white;
+
+    padding:8px 16px;
+
+    border-radius:40px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.profile img{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.profile span{
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   PAGE TITLE
+========================================== */
+
+.page-title{
+
+    width:90%;
+
+    margin:130px auto 40px;
+
+    text-align:center;
+
+}
+
+.page-title h1{
+
+    font-size:46px;
+
+    margin-bottom:15px;
+
+}
+
+.page-title p{
+
+    color:var(--gray);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   AI BANNER
+========================================== */
+
+.ai-banner{
+
+    width:90%;
+
+    margin:auto;
+
+}
+
+.banner-content{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.banner-content i{
+
+    font-size:60px;
+
+}
+
+.banner-content h2{
+
+    margin-bottom:10px;
+
+}
+
+.banner-content p{
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   SEARCH SUMMARY
+========================================== */
+
+.search-summary{
+
+    width:90%;
+
+    margin:40px auto;
+
+}
+
+.summary-card{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.summary-card h4{
+
+    color:var(--gray);
+
+    margin-bottom:10px;
+
+}
+
+.summary-card p{
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   MATCHED RIDES
+========================================== */
+
+.matched-rides{
+
+    width:90%;
+
+    margin:60px auto;
+
+}
+
+.matched-rides h2{
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   RIDE CARD
+========================================== */
+
+.ride-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:25px;
+
+    transition:.3s;
+
+}
+
+.ride-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.driver-image img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.ride-info{
+
+    flex:1;
+
+}
+
+.ride-info h3{
+
+    font-size:26px;
+
+    margin-bottom:15px;
+
+}
+
+.ride-info p{
+
+    margin-bottom:10px;
+
+    color:var(--gray);
+
+}
+
+.ride-info strong{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   JOIN BUTTON
+========================================== */
+
+.join-btn{
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.join-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.25);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.summary-card{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.ride-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+    width:95%;
+
+}
+
+.page-title{
+
+    width:95%;
+
+}
+
+.ai-banner{
+
+    width:95%;
+
+}
+
+.banner-content{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.summary-card{
+
+    grid-template-columns:1fr;
+
+}
+
+.matched-rides{
+
+    width:95%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.page-title h1{
+
+    font-size:34px;
+
+}
+
+.banner-content{
+
+    padding:25px;
+
+}
+
+.driver-image img{
+
+    width:70px;
+
+    height:70px;
+
+}
+
+.join-btn{
+
+    width:100%;
+
+}
+
+}
+
+/* ==========================================
+   FARE COMPARISON
+========================================== */
+
+.fare-comparison{
+
+    width:90%;
+    margin:70px auto;
+
+}
+
+.fare-comparison h2{
+
+    font-size:32px;
+    margin-bottom:30px;
+
+}
+
+.fare-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+}
+
+.fare-card{
+
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.3s;
+
+}
+
+.fare-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.fare-card i{
+
+    font-size:50px;
+    margin-bottom:20px;
+
+}
+
+.shared i{
+
+    color:#10b981;
+
+}
+
+.private i{
+
+    color:#2563eb;
+
+}
+
+.fare-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.fare-card h1{
+
+    font-size:45px;
+    color:var(--primary);
+    margin-bottom:15px;
+
+}
+
+.fare-card p{
+
+    color:var(--gray);
+    line-height:1.7;
+
+}
+
+
+/* ==========================================
+   WHY MATCH
+========================================== */
+
+.why-match{
+
+    width:90%;
+    margin:70px auto;
+
+}
+
+.why-match h2{
+
+    font-size:32px;
+    margin-bottom:30px;
+
+}
+
+.match-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+
+}
+
+.match-card{
+
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.3s;
+
+}
+
+.match-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.match-card i{
+
+    font-size:45px;
+    color:var(--secondary);
+    margin-bottom:18px;
+
+}
+
+.match-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.match-card p{
+
+    color:var(--gray);
+    line-height:1.7;
+
+}
+
+
+/* ==========================================
+   PRIVATE RIDE
+========================================== */
+
+.private-ride{
+
+    width:90%;
+    margin:70px auto;
+
+}
+
+.private-card{
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    color:white;
+    border-radius:25px;
+    padding:50px;
+    text-align:center;
+    box-shadow:var(--shadow);
+
+}
+
+.private-card h2{
+
+    font-size:36px;
+    margin-bottom:15px;
+
+}
+
+.private-card p{
+
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:1.8;
+
+}
+
+.private-btn{
+
+    padding:16px 40px;
+    border:none;
+    border-radius:50px;
+    background:white;
+    color:var(--primary);
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.private-btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ==========================================
+   SAFETY
+========================================== */
+
+.safety{
+
+    width:90%;
+    margin:70px auto;
+
+}
+
+.safety h2{
+
+    font-size:32px;
+    margin-bottom:25px;
+
+}
+
+.safety ul{
+
+    list-style:none;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.safety li{
+
+    margin-bottom:18px;
+
+    color:var(--gray);
+
+    font-size:17px;
+
+}
+
+
+/* ==========================================
+   EMERGENCY
+========================================== */
+
+.emergency{
+
+    width:90%;
+    margin:70px auto;
+
+}
+
+.emergency-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.emergency-card i{
+
+    font-size:50px;
+
+    color:#ef4444;
+
+    margin-bottom:20px;
+
+}
+
+.emergency-card h2{
+
+    margin-bottom:15px;
+
+}
+
+.emergency-card p{
+
+    color:var(--gray);
+
+    margin-bottom:30px;
+
+    line-height:1.7;
+
+}
+
+.emergency-btn{
+
+    padding:16px 35px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.emergency-btn:hover{
+
+    background:#dc2626;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.fare-comparison,
+.why-match,
+.private-ride,
+.safety,
+.emergency{
+
+    width:95%;
+
+}
+
+.private-card{
+
+    padding:35px 25px;
+
+}
+
+.private-card h2{
+
+    font-size:30px;
+
+}
+
+.fare-card h1{
+
+    font-size:36px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.private-btn,
+.emergency-btn{
+
+    width:100%;
+
+}
+
+.fare-card,
+.match-card,
+.emergency-card{
+
+    padding:25px;
+
+}
+
+.safety ul{
+
+    padding:25px;
+
+}
+
+}

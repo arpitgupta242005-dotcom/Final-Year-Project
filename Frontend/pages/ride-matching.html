@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ride Matching | SmartRide AI</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="../css/ride-matching.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+                HEADER
+===================================== -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-taxi"></i>
+
+<h2>SmartRide AI</h2>
+
+</div>
+
+<div class="nav-right">
+
+<button class="notification">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+
+<div class="profile">
+
+<img src="../images/profile.png"
+     alt="Profile">
+
+<span id="profileName">User</span>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =====================================
+            PAGE TITLE
+===================================== -->
+
+<section class="page-title">
+
+<h1>
+
+Ride Matching
+
+</h1>
+
+<p>
+
+Our AI has found passengers travelling on similar routes.
+Choose the best shared ride and save money.
+
+</p>
+
+</section>
+
+
+
+<!-- =====================================
+            AI MATCHING BANNER
+===================================== -->
+
+<section class="ai-banner">
+
+<div class="banner-content">
+
+<i class="fa-solid fa-robot"></i>
+
+<div>
+
+<h2>
+
+AI Found 3 Best Matches
+
+</h2>
+
+<p>
+
+Matching passengers based on destination,
+travel time, route similarity and seat availability.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+            SEARCH SUMMARY
+===================================== -->
+
+<section class="search-summary">
+
+<div class="summary-card">
+
+<div>
+
+<h4>
+
+Pickup
+
+</h4>
+
+ <strong id="pickupLocation">
+
+AKTU University
+
+</strong>
+
+</div>
+
+<div>
+
+<h4>
+
+Destination
+
+</h4>
+
+ <strong id="destinationLocation">
+
+Hazratganj
+
+</strong>
+
+</div>
+
+<div>
+
+<h4>
+
+Passengers
+
+</h4>
+
+<p>
+
+2 Persons
+
+</p>
+
+</div>
+
+<div>
+
+<h4>
+
+Ride Type
+
+</h4>
+
+<p>
+
+Shared Ride
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+            MATCHED RIDES
+===================================== -->
+
+<section class="matched-rides">
+
+<h2>
+
+Available Shared Rides
+
+</h2>
+
+
+
+<!-- Ride Card 1 -->
+
+<div class="ride-card">
+
+<div class="driver-image">
+
+<img src="../images/profile.png"
+     alt="Passenger">
+
+</div>
+
+<div class="ride-info">
+
+<h3>
+
+Rahul Sharma
+
+</h3>
+
+<p>
+
+Route Match
+
+<strong>96%</strong>
+
+</p>
+
+<p>
+
+Estimated Saving
+
+<strong>₹120</strong>
+
+</p>
+
+<p>
+
+Vehicle
+
+<strong>Hyundai Aura</strong>
+
+</p>
+
+<p>
+
+Driver Rating
+
+⭐ 4.9
+
+</p>
+
+<p>
+
+ETA
+
+2 Minutes
+
+</p>
+
+</div>
+
+<div class="ride-action">
+
+<button class="join-btn">
+
+Join Ride
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- Ride Card 2 -->
+
+<div class="ride-card">
+
+<div class="driver-image">
+
+<img src="../images/profile.png"
+     alt="Passenger">
+
+</div>
+
+<div class="ride-info">
+
+<h3>
+
+Aman Singh
+
+</h3>
+
+<p>
+
+Route Match
+
+<strong>92%</strong>
+
+</p>
+
+<p>
+
+Estimated Saving
+
+<strong>₹110</strong>
+
+</p>
+
+<p>
+
+Vehicle
+
+<strong>Maruti WagonR</strong>
+
+</p>
+
+<p>
+
+Driver Rating
+
+⭐ 4.8
+
+</p>
+
+<p>
+
+ETA
+
+3 Minutes
+
+</p>
+
+</div>
+
+<div class="ride-action">
+
+<button class="join-btn">
+
+Join Ride
+
+</button>
+
+</div>
+
+</div>
+
+
+
+<!-- Ride Card 3 -->
+
+<div class="ride-card">
+
+<div class="driver-image">
+
+<img src="../images/profile.png"
+     alt="Passenger">
+
+</div>
+
+<div class="ride-info">
+
+<h3>
+
+Priya Gupta
+
+</h3>
+
+<p>
+
+Route Match
+
+<strong>89%</strong>
+
+</p>
+
+<p>
+
+Estimated Saving
+
+<strong>₹95</strong>
+
+</p>
+
+<p>
+
+Vehicle
+
+<strong>Swift Dzire</strong>
+
+</p>
+
+<p>
+
+Driver Rating
+
+⭐ 4.9
+
+</p>
+
+<p>
+
+ETA
+
+4 Minutes
+
+</p>
+
+</div>
+
+<div class="ride-action">
+
+<button class="join-btn">
+
+Join Ride
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+        FARE COMPARISON
+===================================== -->
+
+<section class="fare-comparison">
+
+    <h2>Fare Comparison</h2>
+
+    <div class="fare-container">
+
+        <div class="fare-card shared">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h3>Shared Ride</h3>
+
+            <h1>₹180</h1>
+
+            <p>Save up to ₹120 by sharing your ride.</p>
+
+        </div>
+
+        <div class="fare-card private">
+
+            <i class="fa-solid fa-car"></i>
+
+            <h3>Private Ride</h3>
+
+            <h1>₹300</h1>
+
+            <p>Travel alone with maximum comfort.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+        WHY THIS MATCH
+===================================== -->
+
+<section class="why-match">
+
+    <h2>Why These Matches?</h2>
+
+    <div class="match-container">
+
+        <div class="match-card">
+
+            <i class="fa-solid fa-route"></i>
+
+            <h3>Similar Route</h3>
+
+            <p>Passengers are travelling on nearly the same route.</p>
+
+        </div>
+
+        <div class="match-card">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>Same Travel Time</h3>
+
+            <p>Your pickup timings closely match each other.</p>
+
+        </div>
+
+        <div class="match-card">
+
+            <i class="fa-solid fa-leaf"></i>
+
+            <h3>Eco Friendly</h3>
+
+            <p>Fewer taxis on the road reduce traffic and pollution.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+        PRIVATE RIDE
+===================================== -->
+
+<section class="private-ride">
+
+    <div class="private-card">
+
+        <h2>Need More Privacy?</h2>
+
+        <p>
+
+            Book a private taxi if you don't want
+            to share your ride.
+
+        </p>
+
+        <button class="private-btn">
+
+            Book Private Ride
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+        SAFETY TIPS
+===================================== -->
+
+<section class="safety">
+
+    <h2>Safety Tips</h2>
+
+    <ul>
+
+        <li>✔ Verify the driver's identity before boarding.</li>
+
+        <li>✔ Share your live location with family.</li>
+
+        <li>✔ Wear your seat belt throughout the ride.</li>
+
+        <li>✔ Contact emergency services if required.</li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================
+        EMERGENCY CONTACT
+===================================== -->
+
+<section class="emergency">
+
+    <div class="emergency-card">
+
+        <i class="fa-solid fa-phone"></i>
+
+        <h2>Emergency Help</h2>
+
+        <p>
+
+            Contact our emergency support team
+            anytime during your trip.
+
+        </p>
+
+        <button class="emergency-btn">
+
+            Call Support
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+        FOOTER
+===================================== -->
+
+<footer>
+
+    <p>
+
+        © 2026 SmartRide AI | Ride Matching System
+
+    </p>
+
+</footer>
+
+<!-- JavaScript -->
+
+<script src="../js/ride-matching.js"></script>
+
+</body>
+</html>

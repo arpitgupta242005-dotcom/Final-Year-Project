@@ -1,0 +1,1029 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#10b981;
+    --dark:#1e293b;
+    --gray:#64748b;
+    --light:#ffffff;
+    --bg:#f8fafc;
+
+    --shadow:0 10px 35px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+nav{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:34px;
+    color:var(--primary);
+
+}
+
+.logo h2{
+
+    font-size:28px;
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   RIGHT NAV
+========================================== */
+
+.nav-right{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+}
+
+/* ==========================================
+   NOTIFICATION BUTTON
+========================================== */
+
+.notification{
+
+    width:50px;
+    height:50px;
+
+    border:none;
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.notification i{
+
+    font-size:20px;
+    color:var(--primary);
+
+}
+
+.notification:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/* ==========================================
+   PROFILE
+========================================== */
+
+.profile{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    background:white;
+
+    padding:8px 15px;
+
+    border-radius:50px;
+
+    box-shadow:var(--shadow);
+
+    cursor:pointer;
+
+}
+
+.profile img{
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.profile span{
+
+    font-weight:600;
+    color:var(--dark);
+
+}
+
+/* ==========================================
+   WELCOME SECTION
+========================================== */
+
+.welcome{
+
+    width:90%;
+
+    margin:130px auto 50px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   WELCOME TEXT
+========================================== */
+
+.welcome h1{
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+    color:var(--dark);
+
+}
+
+.welcome p{
+
+    color:var(--gray);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   WEATHER CARD
+========================================== */
+
+.weather-card{
+
+    background:white;
+
+    padding:25px 35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    text-align:center;
+
+}
+
+.weather-card i{
+
+    font-size:45px;
+
+    color:#f59e0b;
+
+    margin-bottom:15px;
+
+}
+
+.weather-card h3{
+
+    font-size:30px;
+
+    margin-bottom:5px;
+
+}
+
+.weather-card span{
+
+    color:var(--gray);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .welcome{
+
+        flex-direction:column;
+
+        gap:30px;
+
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    nav{
+
+        width:95%;
+
+    }
+
+    .logo h2{
+
+        font-size:22px;
+
+    }
+
+    .welcome{
+
+        width:95%;
+
+    }
+
+    .welcome h1{
+
+        font-size:34px;
+
+    }
+
+    .welcome p{
+
+        font-size:16px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .profile span{
+
+        display:none;
+
+    }
+
+    .weather-card{
+
+        width:100%;
+
+    }
+
+}
+
+/* ==========================================
+   RIDE SEARCH SECTION
+========================================== */
+
+.ride-search{
+
+    width:90%;
+
+    margin:40px auto 80px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:35px;
+
+}
+
+/* ==========================================
+   SEARCH CARD
+========================================== */
+
+.search-card{
+
+    background:#ffffff;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.search-card h2{
+
+    font-size:30px;
+
+    color:var(--dark);
+
+    margin-bottom:30px;
+
+}
+
+/* ==========================================
+   INPUT GROUP
+========================================== */
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+    color:var(--dark);
+
+}
+
+/* ==========================================
+   INPUT BOX
+========================================== */
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#f8fafc;
+
+    border:1px solid #dbe3ec;
+
+    border-radius:14px;
+
+    padding:15px 18px;
+
+    transition:.3s;
+
+}
+
+.input-box:hover{
+
+    border-color:var(--primary);
+
+}
+
+.input-box:focus-within{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.10);
+
+}
+
+.input-box i{
+
+    color:var(--primary);
+
+    font-size:18px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   SELECT BOX
+========================================== */
+
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:14px;
+
+    border:1px solid #dbe3ec;
+
+    background:#f8fafc;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+select:hover{
+
+    border-color:var(--primary);
+
+}
+
+select:focus{
+
+    border-color:var(--primary);
+
+}
+
+/* ==========================================
+   TWO COLUMN ROW
+========================================== */
+
+.search-row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+/* ==========================================
+   FARE CARD
+========================================== */
+
+.fare-card{
+
+    margin-top:25px;
+
+    padding:20px;
+
+    border-radius:18px;
+
+    background:#eef5ff;
+
+    text-align:center;
+
+    color:var(--gray);
+
+}
+
+.fare-card h3{
+
+    margin-top:10px;
+
+    color:var(--primary);
+
+    font-size:34px;
+
+}
+
+/* ==========================================
+   FIND RIDE BUTTON
+========================================== */
+
+.ride-btn{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:17px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.ride-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 15px 35px rgba(37,99,235,.25);
+
+}
+
+/* ==========================================
+   MAP CARD
+========================================== */
+
+.map-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+    min-height:650px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   MAP PLACEHOLDER
+========================================== */
+
+.map-placeholder{
+
+    text-align:center;
+
+    color:var(--gray);
+
+}
+
+.map-placeholder i{
+
+    font-size:90px;
+
+    color:var(--primary);
+
+    margin-bottom:25px;
+
+}
+
+.map-placeholder h2{
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+    color:var(--dark);
+
+}
+
+.map-placeholder p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1100px){
+
+.ride-search{
+
+    grid-template-columns:1fr;
+
+}
+
+.map-card{
+
+    min-height:400px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.search-row{
+
+    grid-template-columns:1fr;
+
+}
+
+.search-card{
+
+    padding:25px;
+
+}
+
+.search-card h2{
+
+    font-size:24px;
+
+}
+
+.map-placeholder i{
+
+    font-size:70px;
+
+}
+
+.map-placeholder h2{
+
+    font-size:28px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.ride-search{
+
+    width:95%;
+
+}
+
+.search-card{
+
+    padding:20px;
+
+}
+
+.fare-card h3{
+
+    font-size:28px;
+
+}
+
+}
+
+/* ==========================================
+   QUICK ACTIONS
+========================================== */
+
+.quick-actions{
+
+    width:90%;
+    margin:20px auto 80px;
+
+}
+
+.quick-actions h2{
+
+    font-size:32px;
+    margin-bottom:30px;
+    color:var(--dark);
+
+}
+
+.action-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+
+}
+
+.action-card{
+
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+    text-align:center;
+    transition:.3s;
+    cursor:pointer;
+
+}
+
+.action-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.action-card i{
+
+    font-size:45px;
+    color:var(--primary);
+    margin-bottom:18px;
+
+}
+
+.action-card h3{
+
+    margin-bottom:10px;
+    color:var(--dark);
+
+}
+
+.action-card p{
+
+    color:var(--gray);
+    line-height:1.7;
+
+}
+
+
+/* ==========================================
+   NEARBY DRIVERS
+========================================== */
+
+.drivers{
+
+    width:90%;
+    margin:20px auto 80px;
+
+}
+
+.drivers h2{
+
+    font-size:32px;
+    margin-bottom:30px;
+
+}
+
+.driver-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+
+}
+
+.driver-card{
+
+    background:#ffffff;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.3s;
+
+}
+
+.driver-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.driver-card img{
+
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+
+}
+
+.driver-card h3{
+
+    margin-bottom:8px;
+
+}
+
+.driver-card p{
+
+    color:#f59e0b;
+    font-weight:600;
+
+}
+
+.driver-card span{
+
+    display:block;
+    margin:12px 0;
+    color:var(--gray);
+
+}
+
+.driver-card button{
+
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    background:var(--primary);
+    color:white;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.driver-card button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+ 
+/* ==========================================
+   POPULAR DESTINATIONS
+========================================== */
+
+.destinations{
+
+    width:90%;
+    margin:20px auto 80px;
+
+}
+
+.destinations h2{
+
+    font-size:32px;
+    margin-bottom:30px;
+
+}
+
+.destination-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+
+}
+
+.destination-card{
+
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.3s;
+    cursor:pointer;
+
+}
+
+.destination-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.destination-card i{
+
+    font-size:45px;
+    color:var(--secondary);
+    margin-bottom:15px;
+
+}
+
+.destination-card h3{
+
+    color:var(--dark);
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:35px;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.quick-actions,
+.drivers,
+.recent-trips,
+.destinations{
+
+    width:95%;
+
+}
+
+.quick-actions h2,
+.drivers h2,
+.recent-trips h2,
+.destinations h2{
+
+    font-size:28px;
+
+}
+
+.action-card,
+.driver-card,
+.trip-card,
+.destination-card{
+
+    padding:22px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.driver-card img{
+
+    width:75px;
+    height:75px;
+
+}
+
+.trip-card p{
+
+    font-size:24px;
+
+}
+
+.destination-card i{
+
+    font-size:38px;
+
+}
+
+}

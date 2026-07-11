@@ -1,0 +1,433 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Passenger Dashboard | SmartRide AI</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="../css/dashboard.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+            HEADER
+===================================== -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-taxi"></i>
+
+<h2>SmartRide AI</h2>
+
+</div>
+
+<div class="nav-right">
+
+<button class="notification">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+
+ <div class="profile">
+
+<img src="../images/profile.png"
+     alt="Profile">
+
+<span id="profileName">User</span>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<!-- =====================================
+        WELCOME SECTION
+===================================== -->
+
+<section class="welcome">
+
+<div class="welcome-text">
+
+ <h1 id="greeting">
+
+Good Morning 👋
+
+</h1>
+
+<p>
+
+Book a ride, share your journey,
+save money and travel smarter.
+
+</p>
+
+</div>
+
+<div class="weather-card">
+
+<i class="fa-solid fa-sun"></i>
+
+<h3>28°C</h3>
+
+<span>Clear Sky</span>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+        RIDE SEARCH
+===================================== -->
+
+<section class="ride-search">
+
+<div class="search-card">
+
+<h2>
+
+Book Your Ride
+
+</h2>
+
+<div class="input-group">
+
+<label>
+
+Pickup Location
+
+</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-location-dot"></i>
+ <input
+type="text"
+id="pickup"
+placeholder="Enter pickup location">
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Destination
+
+</label>
+
+<div class="input-box">
+
+<i class="fa-solid fa-map-location-dot"></i>
+
+<input
+type="text"
+id="destination"
+placeholder="Enter destination">
+
+</div>
+
+</div>
+
+<div class="search-row">
+
+<div class="input-group">
+
+<label>
+
+Passengers
+
+</label>
+
+<select>
+
+<option>1 Passenger</option>
+
+<option>2 Passengers</option>
+
+<option>3 Passengers</option>
+
+<option>4 Passengers</option>
+
+</select>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Ride Type
+
+</label>
+
+<select>
+
+<option>Shared Ride</option>
+
+<option>Private Ride</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="fare-card">
+
+Estimated Fare
+
+<h3>
+
+₹180
+
+</h3>
+
+</div>
+ <button class="ride-btn" id="findRideBtn">
+    Find Ride
+</button>
+
+</div>
+
+
+<!-- =====================================
+        MAP PLACEHOLDER
+===================================== -->
+
+<div class="map-card">
+
+<div class="map-placeholder">
+
+<i class="fa-solid fa-map"></i>
+
+<h2>
+
+Google Maps
+
+</h2>
+
+<p>
+
+Live map will be integrated here
+
+using Google Maps API.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+        QUICK ACTIONS
+===================================== -->
+
+<section class="quick-actions">
+
+    <h2>Quick Actions</h2>
+
+    <div class="action-container">
+
+        <div class="action-card">
+
+            <i class="fa-solid fa-users"></i>
+
+            <h3>Shared Ride</h3>
+
+            <p>Save money by sharing your ride.</p>
+
+        </div>
+
+        <div class="action-card">
+
+            <i class="fa-solid fa-car"></i>
+
+            <h3>Private Ride</h3>
+
+            <p>Book an exclusive taxi for yourself.</p>
+
+        </div>
+
+        <div class="action-card">
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+            <h3>Ride History</h3>
+
+            <p>View your previous trips.</p>
+
+        </div>
+
+        <div class="action-card">
+
+            <i class="fa-solid fa-wallet"></i>
+
+            <h3>Wallet</h3>
+
+            <p>Check your wallet balance.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+        NEARBY DRIVERS
+===================================== -->
+
+<section class="drivers">
+
+    <h2>Nearby Drivers</h2>
+
+    <div class="driver-container">
+
+        <div class="driver-card">
+
+            <img src="../images/profile.png" alt="Driver">
+
+            <h3>Rajesh Kumar</h3>
+
+            <p>⭐ 4.9</p>
+
+            <span>2 min away</span>
+
+            <button>Book Now</button>
+
+        </div>
+
+        <div class="driver-card">
+
+            <img src="../images/profile.png" alt="Driver">
+
+            <h3>Amit Sharma</h3>
+
+            <p>⭐ 4.8</p>
+
+            <span>3 min away</span>
+
+            <button>Book Now</button>
+
+        </div>
+
+        <div class="driver-card">
+
+            <img src="../images/profile.png" alt="Driver">
+
+            <h3>Rohit Verma</h3>
+
+            <p>⭐ 4.7</p>
+
+            <span>5 min away</span>
+
+            <button>Book Now</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+ 
+
+
+<!-- =====================================
+        POPULAR DESTINATIONS
+===================================== -->
+
+<section class="destinations">
+
+    <h2>Popular Destinations</h2>
+
+    <div class="destination-container">
+
+        <div class="destination-card">
+
+            <i class="fa-solid fa-plane"></i>
+
+            <h3>Airport</h3>
+
+        </div>
+
+        <div class="destination-card">
+
+            <i class="fa-solid fa-train"></i>
+
+            <h3>Railway Station</h3>
+
+        </div>
+
+        <div class="destination-card">
+
+            <i class="fa-solid fa-building-columns"></i>
+
+            <h3>University</h3>
+
+        </div>
+
+        <div class="destination-card">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <h3>Shopping Mall</h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+        FOOTER
+===================================== -->
+
+<footer>
+
+    <p>
+
+        © 2026 SmartRide AI | Passenger Dashboard
+
+    </p>
+
+</footer>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>
