@@ -49,6 +49,7 @@ loginForm.addEventListener("submit", async function (e) {
 
             // Token aur user info save karo
             localStorage.setItem("token", data.token);
+            localStorage.setItem("userId", data.id);
             localStorage.setItem("userRole", data.role);
             localStorage.setItem("userName", data.name);
 
