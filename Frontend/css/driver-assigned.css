@@ -1,0 +1,755 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    overflow-x:hidden;
+}
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#10b981;
+    --danger:#ef4444;
+    --dark:#1e293b;
+    --gray:#64748b;
+    --light:#ffffff;
+
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+}
+
+nav{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:34px;
+    color:var(--primary);
+
+}
+
+.logo h2{
+
+    color:var(--primary);
+
+}
+
+.nav-right{
+
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+
+.notification{
+
+    width:50px;
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:var(--shadow);
+
+    cursor:pointer;
+
+}
+
+.notification i{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:white;
+
+    padding:8px 15px;
+
+    border-radius:40px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.profile img{
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.profile span{
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   SUCCESS BANNER
+========================================== */
+
+.success-banner{
+
+    width:90%;
+
+    margin:130px auto 50px;
+
+}
+
+.success-card{
+
+    background:linear-gradient(135deg,#10b981,#059669);
+
+    color:white;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.success-card i{
+
+    font-size:70px;
+
+    margin-bottom:20px;
+
+}
+
+.success-card h1{
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
+}
+
+.success-card p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   DRIVER SECTION
+========================================== */
+
+.driver-section{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+/* ==========================================
+   DRIVER CARD
+========================================== */
+
+.driver-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.driver-card img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:20px;
+
+}
+
+.driver-card h2{
+
+    margin-bottom:12px;
+
+}
+
+.driver-card p{
+
+    color:var(--gray);
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================================
+   VEHICLE CARD
+========================================== */
+
+.vehicle-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.vehicle-card h2{
+
+    margin-bottom:25px;
+
+}
+
+.vehicle-info p{
+
+    margin-bottom:18px;
+
+    color:var(--gray);
+
+}
+
+.vehicle-info strong{
+
+    color:var(--dark);
+
+}
+
+/* ==========================================
+   RIDE DETAILS
+========================================== */
+
+.ride-details{
+
+    width:90%;
+
+    margin:40px auto;
+
+}
+
+.ride-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.ride-card h2{
+
+    margin-bottom:25px;
+
+}
+
+.ride-card p{
+
+    margin-bottom:15px;
+
+    color:var(--gray);
+
+}
+
+.ride-card strong{
+
+    color:var(--dark);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.driver-section{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+nav{
+
+    width:95%;
+
+}
+
+.success-banner,
+.driver-section,
+.ride-details{
+
+    width:95%;
+
+}
+
+.success-card{
+
+    padding:30px;
+
+}
+
+.success-card h1{
+
+    font-size:30px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.profile span{
+
+    display:none;
+
+}
+
+.driver-card img{
+
+    width:90px;
+
+    height:90px;
+
+}
+
+}
+
+/* ==========================================
+   DRIVER ARRIVAL
+========================================== */
+
+.arrival-section{
+
+    width:90%;
+    margin:50px auto;
+
+}
+
+.arrival-card{
+
+    background:#ffffff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+
+}
+
+.arrival-card h2{
+
+    margin-bottom:15px;
+    color:var(--dark);
+
+}
+
+.arrival-card h1{
+
+    font-size:52px;
+    color:var(--primary);
+    margin-bottom:10px;
+
+}
+
+.arrival-card p{
+
+    color:var(--gray);
+    margin-bottom:25px;
+
+}
+
+/* ==========================================
+   PROGRESS BAR
+========================================== */
+
+.progress-bar{
+
+    width:100%;
+    height:12px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+
+}
+
+.progress{
+
+    width:75%;
+    height:100%;
+    background:linear-gradient(90deg,#10b981,#22c55e);
+    border-radius:20px;
+    animation:progressMove 3s infinite;
+
+}
+
+@keyframes progressMove{
+
+    0%{
+        width:40%;
+    }
+
+    100%{
+        width:75%;
+    }
+
+}
+
+/* ==========================================
+   ACTION BUTTONS
+========================================== */
+
+.action-section{
+
+    width:90%;
+    margin:50px auto;
+
+}
+
+.action-buttons{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+
+}
+
+.action-buttons button{
+
+    padding:18px;
+    border:none;
+    border-radius:15px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.action-buttons i{
+
+    margin-right:8px;
+
+}
+
+.call-btn{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+.chat-btn{
+
+    background:#10b981;
+    color:white;
+
+}
+
+.cancel-btn{
+
+    background:#ef4444;
+    color:white;
+
+}
+
+.tracking-btn{
+
+    background:#f59e0b;
+    color:white;
+
+}
+
+.action-buttons button:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================
+   CO PASSENGERS
+========================================== */
+
+.passenger-section{
+
+    width:90%;
+    margin:50px auto;
+
+}
+
+.passenger-section h2{
+
+    margin-bottom:25px;
+
+}
+
+.passenger-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+
+}
+
+.passenger-card{
+
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.3s;
+
+}
+
+.passenger-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.passenger-card img{
+
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+
+}
+
+.passenger-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.passenger-card p{
+
+    color:var(--gray);
+
+}
+
+/* ==========================================
+   SAFETY SECTION
+========================================== */
+
+.safety-section{
+
+    width:90%;
+    margin:50px auto;
+
+}
+
+.safety-section h2{
+
+    margin-bottom:20px;
+
+}
+
+.safety-section ul{
+
+    list-style:none;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.safety-section li{
+
+    margin-bottom:18px;
+
+    color:var(--gray);
+
+    font-size:17px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:35px;
+    margin-top:60px;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.arrival-section,
+.action-section,
+.passenger-section,
+.safety-section{
+
+    width:95%;
+
+}
+
+.action-buttons{
+
+    grid-template-columns:1fr;
+
+}
+
+.arrival-card h1{
+
+    font-size:40px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.passenger-card{
+
+    padding:20px;
+
+}
+
+.passenger-card img{
+
+    width:70px;
+    height:70px;
+
+}
+
+.arrival-card{
+
+    padding:25px;
+
+}
+
+}

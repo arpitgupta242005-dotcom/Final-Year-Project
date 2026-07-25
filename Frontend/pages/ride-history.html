@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ride History | SmartRide AI</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="../css/ride-history.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+            HEADER
+===================================== -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-taxi"></i>
+
+<h2>SmartRide AI</h2>
+
+</div>
+
+<div class="nav-right">
+
+<button class="notification">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+<a href="profile.html" class="profile-link">
+
+    <i class="fa-solid fa-user"></i>
+
+</a>
+
+<div class="profile">
+
+<img src="../images/profile.png"
+     alt="Profile">
+
+<span id="profileName">User</span>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+
+<!-- =====================================
+            PAGE TITLE
+===================================== -->
+
+<section class="history-title">
+
+<div class="title-card">
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+<h1>
+
+Ride History
+
+</h1>
+
+<p>
+
+View all your previous rides,
+payments and travel history.
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+            STATISTICS
+===================================== -->
+
+<section class="statistics">
+
+<div class="stats-container">
+
+<div class="stat-card">
+
+<i class="fa-solid fa-route"></i>
+
+<h2>25</h2>
+
+<p>Total Trips</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-wallet"></i>
+
+<h2>₹1,540</h2>
+
+<p>Money Saved</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2>18</h2>
+
+<p>Shared Rides</p>
+
+</div>
+
+<div class="stat-card">
+
+<i class="fa-solid fa-car"></i>
+
+<h2>7</h2>
+
+<p>Private Rides</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+            SEARCH
+===================================== -->
+
+<section class="search-section">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="searchRide"
+placeholder="Search destination, driver or date...">
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+            FILTERS
+===================================== -->
+
+<section class="filters">
+
+<button class="filter-btn active">
+
+All
+
+</button>
+
+<button class="filter-btn">
+
+Shared
+
+</button>
+
+<button class="filter-btn">
+
+Private
+
+</button>
+
+<button class="filter-btn">
+
+Completed
+
+</button>
+
+</section>
+
+<!-- =====================================
+            RIDE HISTORY
+===================================== -->
+
+<section class="history-list">
+
+    <div class="ride-card">
+
+        <div class="ride-info">
+
+            <h2>Rajesh Kumar</h2>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                AKTU University
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-arrow"></i>
+                Hazratganj
+            </p>
+
+            <p>
+                <i class="fa-solid fa-calendar-days"></i>
+                18 July 2026
+            </p>
+
+            <p>⭐ 4.9 Rating</p>
+
+        </div>
+
+        <div class="ride-price">
+
+            <h2>₹110</h2>
+
+            <span>Completed</span>
+
+        </div>
+
+        <div class="ride-actions">
+
+            <button class="invoice-btn">
+
+                <i class="fa-solid fa-file-invoice"></i>
+
+                Invoice
+
+            </button>
+
+            <button class="book-btn">
+
+                <i class="fa-solid fa-repeat"></i>
+
+                Book Again
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="ride-card">
+
+        <div class="ride-info">
+
+            <h2>Amit Sharma</h2>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Charbagh Railway Station
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-arrow"></i>
+                Gomti Nagar
+            </p>
+
+            <p>
+                <i class="fa-solid fa-calendar-days"></i>
+                15 July 2026
+            </p>
+
+            <p>⭐ 4.8 Rating</p>
+
+        </div>
+
+        <div class="ride-price">
+
+            <h2>₹180</h2>
+
+            <span>Completed</span>
+
+        </div>
+
+        <div class="ride-actions">
+
+            <button class="invoice-btn">
+
+                <i class="fa-solid fa-file-invoice"></i>
+
+                Invoice
+
+            </button>
+
+            <button class="book-btn">
+
+                <i class="fa-solid fa-repeat"></i>
+
+                Book Again
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="ride-card">
+
+        <div class="ride-info">
+
+            <h2>Priya Gupta</h2>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Airport
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-arrow"></i>
+                Alambagh
+            </p>
+
+            <p>
+                <i class="fa-solid fa-calendar-days"></i>
+                10 July 2026
+            </p>
+
+            <p>⭐ 5.0 Rating</p>
+
+        </div>
+
+        <div class="ride-price">
+
+            <h2>₹220</h2>
+
+            <span>Completed</span>
+
+        </div>
+
+        <div class="ride-actions">
+
+            <button class="invoice-btn">
+
+                <i class="fa-solid fa-file-invoice"></i>
+
+                Invoice
+
+            </button>
+
+            <button class="book-btn">
+
+                <i class="fa-solid fa-repeat"></i>
+
+                Book Again
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+            FOOTER
+===================================== -->
+
+<footer>
+
+    <p>
+
+        © 2026 SmartRide AI | Ride History
+
+    </p>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="../js/ride-history.js"></script>
+
+</body>
+</html>

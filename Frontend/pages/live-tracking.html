@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Live Tracking | SmartRide AI</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="../css/live-tracking.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+            HEADER
+===================================== -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-taxi"></i>
+
+<h2>SmartRide AI</h2>
+
+</div>
+
+<div class="nav-right">
+
+<button class="notification">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+
+<div class="profile">
+
+<img src="../images/profile.png"
+     alt="Profile">
+
+<span id="profileName">User</span>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =====================================
+            RIDE STATUS
+===================================== -->
+
+<section class="ride-status">
+
+<div class="status-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h1>
+
+Ride In Progress
+
+</h1>
+
+<p>
+
+Your driver is on the way.
+Track your ride in real time.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+            LIVE MAP
+===================================== -->
+
+<section class="live-map">
+
+<div class="map-card">
+
+<div class="map-placeholder">
+
+<i class="fa-solid fa-map-location-dot"></i>
+
+<h2>
+
+Google Maps
+
+</h2>
+
+<p>
+
+Live Driver Location
+
+Pickup Point
+
+Destination
+
+Route Tracking
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+            DRIVER DETAILS
+===================================== -->
+
+<section class="driver-details">
+
+<div class="driver-card">
+
+<img src="../images/profile.png"
+     alt="Driver">
+
+<h2>
+
+Rajesh Kumar
+
+</h2>
+
+<p>
+
+⭐ 4.9 Rating
+
+</p>
+
+<p>
+
+🚖 Hyundai Aura
+
+</p>
+
+<p>
+
+Vehicle No : UP32 AB 4589
+
+</p>
+
+<div class="driver-contact">
+
+<button class="call-btn">
+
+<i class="fa-solid fa-phone"></i>
+
+Call
+
+</button>
+
+<button class="chat-btn">
+
+<i class="fa-solid fa-comment"></i>
+
+Chat
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =====================================
+            TRIP PROGRESS
+===================================== -->
+
+<section class="trip-progress">
+
+    <h2>Trip Progress</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item active">
+
+            <i class="fa-solid fa-circle-check"></i>
+
+            <div>
+
+                <h3>Driver Assigned</h3>
+
+                <p>Your driver has accepted the ride.</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item active">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <div>
+
+                <h3>Driver Reached Pickup</h3>
+
+                <p>Driver is arriving at your pickup location.</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <i class="fa-solid fa-user-group"></i>
+
+            <div>
+
+                <h3>Passenger Picked Up</h3>
+
+                <p>Your trip will begin shortly.</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <i class="fa-solid fa-road"></i>
+
+            <div>
+
+                <h3>On the Way</h3>
+
+                <p>Travelling towards your destination.</p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <i class="fa-solid fa-flag-checkered"></i>
+
+            <div>
+
+                <h3>Destination Reached</h3>
+
+                <p>Ride completed successfully.</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+            ETA
+===================================== -->
+
+<section class="eta-section">
+
+    <div class="eta-card">
+
+        <h2>Estimated Arrival</h2>
+
+        <h1>04 : 15</h1>
+
+        <p>Minutes Remaining</p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+            ACTION BUTTONS
+===================================== -->
+
+<section class="tracking-actions">
+
+    <button class="share-btn">
+
+        <i class="fa-solid fa-share-nodes"></i>
+
+        Share Trip
+
+    </button>
+
+    <button class="emergency-btn">
+
+        <i class="fa-solid fa-triangle-exclamation"></i>
+
+        Emergency
+
+    </button>
+
+    <button class="complete-btn">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        Complete Ride
+
+    </button>
+
+</section>
+
+
+<!-- =====================================
+            RIDE SUMMARY
+===================================== -->
+
+<section class="ride-summary">
+
+    <div class="summary-card">
+
+        <h2>Ride Summary</h2>
+
+        <p> <strong id="pickupLocation">AKTU University</strong></p>
+
+        <p> <strong id="destinationLocation">Hazratganj</strong></p>
+
+        <p><strong>Distance :</strong> 12 km</p>
+
+        <p><strong>Estimated Fare :</strong> ₹180</p>
+
+        <p><strong>Ride Type :</strong> Shared Ride</p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+            FOOTER
+===================================== -->
+
+<footer>
+
+    <p>
+
+        © 2026 SmartRide AI | Live Tracking
+
+    </p>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="../js/live-tracking.js"></script>
+
+</body>
+</html>

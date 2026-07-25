@@ -1,0 +1,806 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f8fafc;
+
+    color:#1e293b;
+
+}
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#10b981;
+    --dark:#1e293b;
+    --gray:#64748b;
+    --light:#ffffff;
+
+    --shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+    z-index:1000;
+
+}
+
+nav{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:34px;
+
+    color:var(--primary);
+
+}
+
+.logo h2{
+
+    color:var(--primary);
+
+}
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.notification{
+
+    width:50px;
+
+    height:50px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:white;
+
+    cursor:pointer;
+
+    box-shadow:var(--shadow);
+
+}
+
+.notification i{
+
+    color:var(--primary);
+
+    font-size:20px;
+
+}
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:white;
+
+    padding:8px 15px;
+
+    border-radius:40px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.profile img{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+}
+
+.profile span{
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   PAYMENT TITLE
+========================================== */
+
+.payment-title{
+
+    width:90%;
+
+    margin:130px auto 40px;
+
+}
+
+.title-card{
+
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+
+    color:white;
+
+    text-align:center;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.title-card i{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+}
+
+.title-card h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.title-card p{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   TRIP SUMMARY
+========================================== */
+
+.trip-summary{
+
+    width:90%;
+
+    margin:50px auto;
+
+}
+
+.summary-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.summary-card h2{
+
+    margin-bottom:30px;
+
+}
+
+.trip-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #e5e7eb;
+
+}
+
+.trip-row:last-child{
+
+    border-bottom:none;
+
+}
+
+.trip-row span{
+
+    color:var(--gray);
+
+}
+
+.trip-row i{
+
+    color:var(--primary);
+
+    margin-right:8px;
+
+}
+
+/* ==========================================
+   FARE BREAKDOWN
+========================================== */
+
+.fare-breakdown{
+
+    width:90%;
+
+    margin:50px auto;
+
+}
+
+.fare-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.fare-card h2{
+
+    margin-bottom:30px;
+
+}
+
+.fare-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:14px 0;
+
+    color:var(--gray);
+
+}
+
+.total-fare{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+}
+
+.total-fare h2{
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+nav{
+
+    width:95%;
+
+}
+
+.payment-title,
+.trip-summary,
+.fare-breakdown{
+
+    width:95%;
+
+}
+
+.trip-row{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:8px;
+
+}
+
+.title-card{
+
+    padding:30px;
+
+}
+
+.title-card h1{
+
+    font-size:32px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.profile span{
+
+    display:none;
+
+}
+
+.title-card i{
+
+    font-size:45px;
+
+}
+
+.title-card h1{
+
+    font-size:28px;
+
+}
+
+}
+
+/* ==========================================
+   PAYMENT METHODS
+========================================== */
+
+.payment-methods{
+
+    width:90%;
+    margin:50px auto;
+
+}
+
+.payment-methods h2{
+
+    margin-bottom:30px;
+
+}
+
+.method-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+
+}
+
+.payment-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+.payment-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.payment-card input{
+
+    position:absolute;
+
+    top:20px;
+
+    right:20px;
+
+}
+
+.payment-card i{
+
+    font-size:45px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.payment-card h3{
+
+    margin-bottom:10px;
+
+}
+
+.payment-card p{
+
+    color:var(--gray);
+
+    line-height:1.6;
+
+}
+
+/* ==========================================
+   PROMO CODE
+========================================== */
+
+.promo-section{
+
+    width:90%;
+
+    margin:50px auto;
+
+}
+
+.promo-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.promo-card h2{
+
+    margin-bottom:25px;
+
+}
+
+.promo-box{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.promo-box input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:2px solid #e5e7eb;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.promo-box input:focus{
+
+    border-color:var(--primary);
+
+}
+
+.promo-box button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.promo-box button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================================
+   SECURE PAYMENT
+========================================== */
+
+.secure-payment{
+
+    width:90%;
+
+    margin:50px auto;
+
+}
+
+.secure-card{
+
+    background:#ffffff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.secure-card i{
+
+    font-size:45px;
+
+    color:var(--secondary);
+
+}
+
+.secure-card h3{
+
+    margin-bottom:8px;
+
+}
+
+.secure-card p{
+
+    color:var(--gray);
+
+}
+
+/* ==========================================
+   PAY BUTTON
+========================================== */
+
+.pay-section{
+
+    width:90%;
+
+    margin:50px auto 70px;
+
+    text-align:center;
+
+}
+
+.pay-btn{
+
+    width:100%;
+
+    max-width:420px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:linear-gradient(135deg,#10b981,#059669);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pay-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 30px rgba(16,185,129,.3);
+
+}
+
+.pay-btn i{
+
+    margin-right:10px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    background:#0f172a;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+}
+
+/* ==========================================
+   ANIMATION
+========================================== */
+
+.title-card,
+.summary-card,
+.fare-card,
+.payment-card,
+.promo-card,
+.secure-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.payment-methods,
+.promo-section,
+.secure-payment,
+.pay-section{
+
+    width:95%;
+
+}
+
+.promo-box{
+
+    flex-direction:column;
+
+}
+
+.secure-card{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.pay-btn{
+
+    max-width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.payment-card{
+
+    padding:25px;
+
+}
+
+.payment-card i{
+
+    font-size:38px;
+
+}
+
+.secure-card{
+
+    padding:25px;
+
+}
+
+}

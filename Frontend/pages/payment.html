@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Payment | SmartRide AI</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="../css/payment.css">
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- =====================================
+            HEADER
+===================================== -->
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-taxi"></i>
+
+<h2>SmartRide AI</h2>
+
+</div>
+
+<div class="nav-right">
+
+<button class="notification">
+
+<i class="fa-solid fa-bell"></i>
+
+</button>
+
+<div class="profile">
+
+<img src="../images/profile.png"
+     alt="Profile">
+
+<span id="profileName">User</span>
+
+</div>
+
+</div>
+
+</nav>
+
+</header>
+
+
+
+<!-- =====================================
+            PAGE TITLE
+===================================== -->
+
+<section class="payment-title">
+
+<div class="title-card">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h1>
+
+Complete Payment
+
+</h1>
+
+<p>
+
+Review your trip details and pay securely
+to complete your ride.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+            TRIP SUMMARY
+===================================== -->
+
+<section class="trip-summary">
+
+<div class="summary-card">
+
+<h2>
+
+Trip Summary
+
+</h2>
+
+<div class="trip-row">
+
+<span>
+
+<i class="fa-solid fa-location-dot"></i>
+
+Pickup
+
+</span>
+
+ <strong id="pickupLocation">AKTU University</strong>
+
+</div>
+
+<div class="trip-row">
+
+<span>
+
+<i class="fa-solid fa-location-arrow"></i>
+
+Destination
+
+</span>
+
+ <strong id="destinationLocation">Hazratganj</strong>
+
+</div>
+
+<div class="trip-row">
+
+<span>
+
+<i class="fa-solid fa-road"></i>
+
+Distance
+
+</span>
+
+<strong>
+
+12 KM
+
+</strong>
+
+</div>
+
+<div class="trip-row">
+
+<span>
+
+<i class="fa-solid fa-clock"></i>
+
+Duration
+
+</span>
+
+<strong>
+
+28 Minutes
+
+</strong>
+
+</div>
+
+<div class="trip-row">
+
+<span>
+
+<i class="fa-solid fa-users"></i>
+
+Ride Type
+
+</span>
+
+<strong>
+
+Shared Ride
+
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+            FARE BREAKDOWN
+===================================== -->
+
+<section class="fare-breakdown">
+
+<div class="fare-card">
+
+<h2>
+
+Fare Details
+
+</h2>
+
+<div class="fare-item">
+
+<span>Base Fare</span>
+
+<span>₹120</span>
+
+</div>
+
+<div class="fare-item">
+
+<span>Shared Ride Discount</span>
+
+<span>-₹40</span>
+
+</div>
+
+<div class="fare-item">
+
+<span>Platform Fee</span>
+
+<span>₹20</span>
+
+</div>
+
+<div class="fare-item">
+
+<span>GST (5%)</span>
+
+<span>₹10</span>
+
+</div>
+
+<hr>
+
+<div class="total-fare">
+
+<h3>Total Amount</h3>
+
+<h2>₹110</h2>
+
+</div>
+
+</div>
+
+</section>
+<!-- =====================================
+            PAYMENT METHODS
+===================================== -->
+
+<section class="payment-methods">
+
+    <h2>Select Payment Method</h2>
+
+    <div class="method-container">
+
+        <label class="payment-card">
+
+            <input type="radio" name="payment" value="UPI" checked>
+
+            <i class="fa-brands fa-google-pay"></i>
+
+            <h3>UPI</h3>
+
+            <p>Google Pay, PhonePe, Paytm</p>
+
+        </label>
+
+        <label class="payment-card">
+
+            <input type="radio" name="payment" value="Card">
+
+            <i class="fa-solid fa-credit-card"></i>
+
+            <h3>Debit / Credit Card</h3>
+
+            <p>Visa, MasterCard, RuPay</p>
+
+        </label>
+
+        <label class="payment-card">
+
+            <input type="radio" name="payment" value="Wallet">
+
+            <i class="fa-solid fa-wallet"></i>
+
+            <h3>Wallet</h3>
+
+            <p>SmartRide Wallet</p>
+
+        </label>
+
+        <label class="payment-card">
+
+            <input type="radio" name="payment" value="Cash">
+
+            <i class="fa-solid fa-money-bill-wave"></i>
+
+            <h3>Cash</h3>
+
+            <p>Pay directly to the driver</p>
+
+        </label>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+            PROMO CODE
+===================================== -->
+
+<section class="promo-section">
+
+    <div class="promo-card">
+
+        <h2>Apply Promo Code</h2>
+
+        <div class="promo-box">
+
+            <input type="text"
+                   id="promoCode"
+                   placeholder="Enter Promo Code">
+
+            <button id="applyPromo">
+
+                Apply
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+            SECURE PAYMENT
+===================================== -->
+
+<section class="secure-payment">
+
+    <div class="secure-card">
+
+        <i class="fa-solid fa-lock"></i>
+
+        <div>
+
+            <h3>Secure Payment</h3>
+
+            <p>
+
+                Your payment is protected with
+                256-bit SSL encryption.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================
+            PAY NOW
+===================================== -->
+
+<section class="pay-section">
+
+    <button id="payNowBtn" class="pay-btn">
+
+        <i class="fa-solid fa-circle-check"></i>
+
+        Pay ₹110
+
+    </button>
+
+</section>
+
+
+<!-- =====================================
+            FOOTER
+===================================== -->
+
+<footer>
+
+    <p>
+
+        © 2026 SmartRide AI | Secure Payment
+
+    </p>
+
+</footer>
+
+
+<!-- JavaScript -->
+
+<script src="../js/payment.js"></script>
+
+</body>
+</html>
